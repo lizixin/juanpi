@@ -1,4 +1,4 @@
-app.controller('globalCtrl', ['$scope', '$http', function ($scop
+app.controller('globalCtrl', ['$scope', '$http', function ($scope
 	, $http) {
 		//获取json数据
 		$http.get('../../data/global-02.json').success(function (data) {
