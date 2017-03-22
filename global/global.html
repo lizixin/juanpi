@@ -36,23 +36,20 @@
 			
 			<div class="import" ng-repeat ='items in kouhongData'>
 				<div class="importShow"><img src="{{ items.shop_cover }}"/></div>
-				<a href="">
-					<div class="swiper-container">
-					    <div class="swiper-wrapper">
-					        <div class="swiper-slide">
-					        	<div class="importGoods col-sm-4 col-xs-4" ng-repeat ='tempItem in items.shop_goods'>
-								<div class="importGoodsImg"><img src="{{ tempItem.pic_url }}"/></div>
-								<div class="importGoodsPrice">
-									<span class="newPrice">24.9</span>
-									<span class='oldPrice'><del>25</del></span>
-								</div>
-								<div class="importGoodsName">{{ tempItem.title }}</div>
-							</div>	
-							<div class="hr col-sm-12 col-xs-12"></div>
-							</div>
-					     </div>
-		   			 </div>
-				</a>
+				<div class="im">
+					
 				
+				<div class="importShowMax">
+					 <div class="importGoods" ng-repeat ='tempItem in items.shop_goods'>
+						<div class="importGoodsImg"><img src="{{ tempItem.pic_url }}"/></div>
+						<div class="importGoodsPrice">
+							<span class="newPrice">{{ tempItem.cprice }}</span>
+							<span class='oldPrice'><del>{{ tempItem.oprice }}</del></span>
+						</div>
+						<div class="importGoodsName">{{ tempItem.title }}</div>
+						<div class="hr col-sm-12 col-xs-12"></div>
+					</div>
+				</div>
+				</div>
 			</div>
-				
+		</div>	

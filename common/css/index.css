@@ -1,3 +1,6 @@
+html{
+	font-family:PingFang-SC-Regular,Helvetica Neue,Helvetica,Droid Sans Fallback,microsoft yahei,sans-serif;
+}
 .tabBar{
 	height: 1.53125rem
 	width: 10rem;
@@ -10,6 +13,8 @@
 	justify-content :space-around;
 	background: #FFF;
 	z-index: 999;
+	
+	
 }
 .tabBar a img{
 	width: 1.0rem;
@@ -20,4 +25,5 @@
 	font-size: 0.222222rem;
 	line-height: 0.416667rem;
 	text-align: center;
+	color:#4A4A4A;
 }
